@@ -57,5 +57,23 @@ const myFunction = function(){
 console.log(typeof anotherId);
 
 
+let myYutubeName = "Meyou@ggd";
+let anotherName = myYutubeName;
+
+anotherName = "hhduhuef";
+
+console.log(myYutubeName, anotherName);
+
+let user1 = {
+    email: "user1@gmail.com",
+    upi: "user1@axl"
+}
+
+let user2 = user1;
+
+user2.email = "muyuy@yahoo.com";
+
+console.log(user1.email);
+console.log(user2.email);
 
 // https://262.ecma-international.org/5.1/#sec-11.4.3;
