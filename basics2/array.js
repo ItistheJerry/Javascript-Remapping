@@ -3,7 +3,7 @@
 const myArray = [0, 4, 3, 5, 2]; // each single is an element can be anything symbol, char, numbers etc
 // array elements can't be accessed with using arbitary strings;
 
-console.log(myArray); // yes 
+console.log(myArray); // yes  
 
 // shallow copy;
 // of an object whose property share the same references
