@@ -27,6 +27,18 @@ console.log(myArr2.length);
 // Array Methods;
 
 myArray.push(7);
+myArray.pop();
+
+myArray.unshift(9);
+myArray.shift();
+
+console.log(myArray.includes(9));
+console.log(myArray.indexOf(9)); // -1 = does not exist
+// console.log(myArray.);
+
+const nreArr = myArray.join()
+
 console.log(myArray);
+console.log(nreArr);
 
 
