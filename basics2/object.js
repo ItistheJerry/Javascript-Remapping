@@ -159,4 +159,61 @@ console.log(tinderUser1.hasOwnProperty('isLoggedIn'));
 console.log(tinderUser1.hasOwnProperty('isLogged'));
 
 
+
+
 console.log("\n+++++++++++++*********** Objects3 ++++++++++++++++********\n");
+
+// object mastery leads better api building;
+// de-structuring of objects = have to perform many times;
+
+const course = {
+    courseName: "Js-Remapping",
+    price: "999",
+    courseInstructure: "Jerry"
+}
+
+// course.courseInstructure;
+// better syntax;
+
+const {courseInstructure: instructor} = course;
+console.log(instructor);
+
+
+
+
+
+// methods:
+// used mostly in react;
+// destructuring below
+const navbar = ({company}) => {
+    console.log("BlueBlue");
+    
+}
+
+navbar(company = "Jerry");
+
+
+
+// JSON API
+console.log("\n+++++++++++************* JSON API ***************+++++++\n");
+
+{
+    "name": "Jerry",
+    "courseName": "Js Remapping",
+    "price": "free"
+}
+
+
+// we take or import this json data via fetch method and turn into object for data retrieval;
+
+// sometime api also in array format including multiple objects 
+
+[
+    {},
+    {},
+    {}
+]
+// tools to understand api's in json format 
+// json formator;
+
+// understand array and object better 
