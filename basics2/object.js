@@ -98,11 +98,12 @@ console.log(tinderUser2.fullname?.userFullname.firstname); // if this value exis
 
 
 // combining object
-const obj1 = {1: "a", 2: "b"}
-const obj2 = {3: "c", 4: "d"}
+const obj1 = {1: "a", 2: "b"} // = target
+const obj2 = {3: "c", 4: "d"} // = source
 
 const obj3 = {obj1, obj2}
 console.log(obj3); // not usefull
+console.table(obj3);
 
 const obj4 = Object.assign(obj1, obj2);
 console.log(obj4);
@@ -111,7 +112,51 @@ console.log(obj4);
 
 const obj5 = Object.assign({}, obj1, obj2); // optional parameter it is a good use as
 // all value will be combined;
+console.table(obj5);
 console.log(obj5);
+
+
+const obj6 = Object.assign({}, obj1, obj2);
+console.log(obj6);
+
+// here {} = target, obj1,obj2 = source 
+
+// Object.assign(target, source) = static method copies al innumerable and returns a modified target object.
+
+const obj7 = {...obj1, ...obj2}
+console.log(obj7);
+
+//important syntax used when data arrives from database;
+
+const Nusers = [ // array's object
+{
+    id: 1,
+    email: "User1@gmail.com"
+},
+{
+    id: 2,
+    email: "User2@gmail.com"
+},
+{
+    id: 3,
+    email: "User3@gmail.com"
+} // prnt value or loop through
+]
+
+console.log(Nusers[1].email);
+
+console.log(tinderUser1);
+// important methods
+console.log(Object.keys(tinderUser1));
+console.table(Object.keys(tinderUser1));
+console.log(Object.values(tinderUser1));
+console.log(Object.entries(tinderUser1));
+console.table(Object.entries(tinderUser1));
+
+// when looping through object and asking for a value but in case value doesn't exists then can cause error so 
+// either check manually or below;
+console.log(tinderUser1.hasOwnProperty('isLoggedIn'));
+console.log(tinderUser1.hasOwnProperty('isLogged'));
 
 
 console.log("\n+++++++++++++*********** Objects3 ++++++++++++++++********\n");
