@@ -25,4 +25,9 @@ for (const greet of greetings) {
  console.log("\n+++++++********* MAPS ++++++++********\n");
 
  const map = new Map() // object itself
- map
+ map.set('IN', "India")
+ map.set('USA')
+// map is a key value object.
+// can use with strings, numbers, unlike object it remembers the order
+// core diff is original values no duplicate
+
