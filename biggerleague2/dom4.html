@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jerry and Code || DOM</title>
+</head>
+<body style="background-color: #212121; color: greenyellow; text-align: center;">
+    <ul class="language">
+        <li>JavaScript</li>
+    </ul>
+</body>
+<script>
+    /* To add a list item we will make with a function  */
+
+    function addLanguage(langName){
+        // first create a list item 
+        // then select Ul and then append
+        const li = document.createElement('li');
+        // now to add value which is langName
+        li.innerHTML = `${langName}`
+        // now it needed to be attached in language
+        document.querySelector('.language').appendChild(li)
+    }
+    // now running the function
+    addLanguage("Python")
+    addLanguage("C++")
+    addLanguage("SQL")
+    // everytime we run it, it runs the entire function to make it optimizing 
+    // Using DSA to make it better
+    function addOptiLanguage(langName){
+        const li = document.createElement('li')
+        // use appendchild and create textNode
+        li.appendChild(document.createTextNode(langName))
+        // these above two lines are doing exact work as the above function lines are
+        document.querySelector('.language').appendChild(li)
+        // there is no tree traversing happening
+    }
+    addOptiLanguage("Rust")
+
+    // To edit some values 
+    // select
+    const select = document.querySelector("li:nth-child(2)") // now we will change the value
+    // this one works but isnt optimized = select.innerHTML = "Mojo"
+    const select2 = document.createElement('li')
+    select2.textContent = "Mojo" // to add it below
+    select.replaceWith(select2)
+
+    // edit
+    // replacinf javascript to typescript
+    const s_elect = document.querySelector("li:first-child")
+    // change values
+    s_elect.outerHTML = '<li>TypeScript</li>'
+
+
+    // removal
+    const lastLang = document.querySelector('li:last-child')
+    // lastLang.remove()
+
+
+    // Query Selctor and more from web3scool
+
+    // -:- https://www.w3schools.com/js/js_htmldom.asp -:-
+
+</script>
+</html>
