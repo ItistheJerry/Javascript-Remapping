@@ -1,0 +1,87 @@
+body {
+    background-color: black;
+    font-family: 'Courier New', Courier, monospace;
+    color: #00ff66;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  .container {
+    text-align: center;
+    padding: 40px;
+    border: 2px solid #00ff66;
+    clip-path: polygon(0% 0%, 93% 0%, 100% 7%, 100% 100%, 7% 100%, 0% 93%);
+    box-shadow: 0 0 25px #00ff66;
+  }
+  
+  h1 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    text-shadow: 0 0 10px #00ff66;
+  }
+  
+  .field {
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  label {
+    font-size: 1.2em;
+    margin-bottom: 8px;
+    color: #00ff66;
+  }
+  
+  input {
+    background-color: black;
+    color: #00ff66;
+    font-size: 1em;
+    padding: 12px;
+    width: 260px;
+    border: 2px solid #00ff66;
+    box-sizing: border-box;
+  
+    clip-path: polygon(0% 0%, 88% 0%, 100% 12%, 100% 100%, 12% 100%, 0% 88%);
+    box-shadow: 0 0 10px #00ff6655;
+    transition: 0.3s;
+  }
+  
+  input::placeholder {
+    color: #00ff66aa;
+  }
+  
+  input:focus {
+    outline: none;
+    box-shadow: 0 0 15px #00ff66;
+  }
+  
+  button {
+    background-color: black;
+    color: #00ff66;
+    font-size: 1.3em;
+    padding: 14px 50px;
+    border: 2px solid #00ff66;
+    margin-top: 20px;
+  
+    clip-path: polygon(0% 0%, 88% 0%, 100% 12%, 100% 100%, 12% 100%, 0% 88%);
+    box-shadow: 0 0 15px #00ff66;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  button:hover {
+    background-color: #00ff66;
+    color: black;
+    box-shadow: 0 0 25px #00ff66, 0 0 50px #00ff66;
+  }
+  
+  .result {
+    margin-top: 35px;
+    font-size: 1.5em;
+    text-shadow: 0 0 8px #00ff66;
+  }
+  
