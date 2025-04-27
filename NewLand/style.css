@@ -1,0 +1,52 @@
+/* *{
+    margin: 0;
+    padding: 0;
+}
+ */
+
+
+/* Apply the futuristic font and base styles */
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #1c1c1e, #2c2c2e, #3a3a3c);
+    font-family: 'Poppins', sans-serif;
+    color: #f5f5f7;
+  }
+  
+  /* Glassmorphism container */
+  /* .glass-card {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 20px;
+    padding: 3rem 4rem;
+    text-align: center;
+    backdrop-filter: blur(15px);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+  } */
+
+  #images{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 10px;
+  }
+  
+  /* Heading styles */
+  .glass-card h1 {
+    font-size: 3rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+  
+  /* Subtext styles */
+  .glass-card p {
+    font-size: 1.2rem;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+  }
+  
