@@ -34,16 +34,16 @@ document.getElementById('owl').addEventListener('click', function(e){
 
 // so now 2 example where propogation happens and we stop it how?
 
-// document.getElementById('images').addEventListener('click', function(e){
-//     console.log(("Clicked inside the ul"));
+ document.getElementById('images').addEventListener('click', function(e){
+     console.log(("Clicked inside the ul"));
     
-// }, false)
+ }, false)
 
-// document.getElementById('owl').addEventListener('click', function(e){
-//     console.log(("Clicked inside the OWL"));
-//     e.stopImmediatePropagation() // bubble won't happen
+ document.getElementById('owl').addEventListener('click', function(e){
+     console.log(("Clicked inside the OWL"));
+    e.stopImmediatePropagation() // bubble won't happen
     
-// }, false)
+}, false)
 // when clicked owl it runs both the logs si as we clicked on owl then on the ul element its like a bubble blowing owtwards
 // though not right so we try captouring instead of false we use true, though based on use case
 
