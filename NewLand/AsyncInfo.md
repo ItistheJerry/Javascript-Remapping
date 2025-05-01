@@ -28,8 +28,7 @@ Each operations waits for the last one to be executed
 
 
 
-___________________________________________________________________________________
-|---------------------------------------------------------------------------------
+___________________________________________________________________________________|---------------------------------------------------------------------------------
 |  Blocking Code VS                     |               Non Blocking Code
 |                                       |
 |                                       |
@@ -48,5 +47,33 @@ Biggest Blocking code is Reading file it takes time and can block the next code 
 Javascript itself cannot read the fle as it is being in the browser it is done by using node
 
 
+
+JS ENGINE = a;one js engine = made from call stack and memory heap
+the browsers and node is not just js engine alone
+
+Memory heap || Call stack 
+
+               fn ---------|
+               fn          |
+               fn          |
+               global      |
+                           |
+                           |
+               function then calls web API/NODE
+               thus a procedure begins where
+               1. DOM API
+               2. Set TimeOut -------  ====== a time set to do an event or response
+               3. Set Interval      |
+               4. FETCH()-          |__________-> Register Call back
+               from fetch() to promise, where promise goes to high priority call backs and 
+
+
+               RCB(Registered call back) goes to call back and adds to call stack
+
+               Call Stack = 
+
+
+
+               this entire is an event loop
 
 ```
