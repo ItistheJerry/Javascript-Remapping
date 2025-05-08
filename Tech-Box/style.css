@@ -1,0 +1,71 @@
+body {
+    margin: 0;
+    height: 100vh;
+    background-color: #0b0c10; /* Rich Black */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Orbitron', sans-serif;
+  }
+  
+  .container {
+    text-align: center;
+    color: #00ff7f;
+  }
+  
+  .site-title {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #00ff7f;
+    text-shadow: 0 0 10px #00ff7f, 0 0 20px #00ff7f;
+  }
+  
+  /* 🔷 The futuristic glowing box */
+  .neon-box {
+    width: 80vw;
+    height: 80vh;
+    padding: 20px;
+    margin: 0 auto;
+    background: linear-gradient(145deg, #0b0c10, #0f1115);
+    border: 3px solid #00ff7f;
+    border-radius: 20px;
+    box-shadow:
+      0 0 15px #00ff7f,
+      0 0 30px #00ff7f,
+      inset 0 0 10px #00ff7f;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Optional: pseudo-elements for techy corner highlights */
+  .neon-box::before,
+  .neon-box::after {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border: 3px solid #00ff7f;
+  }
+  
+  .neon-box::before {
+    top: -3px;
+    left: -3px;
+    border-right: none;
+    border-bottom: none;
+  }
+  
+  .neon-box::after {
+    bottom: -3px;
+    right: -3px;
+    border-left: none;
+    border-top: none;
+  }
+  
+  .box-text {
+    font-size: 1.5rem;
+    color: #00ff7f;
+    text-shadow: 0 0 5px #00ff7f;
+  }
+  
