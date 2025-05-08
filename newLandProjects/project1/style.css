@@ -1,0 +1,57 @@
+/* .Header{
+    text-align: center;
+    align-items: center;
+    color: yellowgreen;
+} */
+
+.Header {
+    text-align: center;
+    padding: 20px;
+    background-color: #f8f8f8;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    color: yellowgreen;
+}
+/* 
+.footer{
+    align-items: center;
+    position: absolute;
+    display: flex;
+} */
+
+.wholeBody{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border-radius: 15px; */
+    border: 2px solid yellowgreen;
+    margin: 90%;
+    padding: 90%;
+    text-align: center;
+}
+
+
+/* Footer Styling */
+.footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #f8f8f8;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Button Styling */
+button {
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 2px solid #ccc;
+    background-color: #fff;
+}
+
+button:hover {
+    background-color: #ddd;
+}
