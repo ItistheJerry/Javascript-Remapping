@@ -1,0 +1,17 @@
+https://randomuser.me
+
+https://jsonformatter.org/#google_vignette
+
+xml and http requests are the oldest powerfull used till date it is ajex programming 
+asynchronous programming state wise programming!
+
+readyState in xml
+0 = UNSENT = Client has been created open() not called yet.
+1 = OPENED = open() has been called 
+2 = HEADERS_RECIEVED = send() has been called, and headers and status are available
+3 = LOADING = DOWNLOADING; responseText holds partial data
+4 = DONE = The operation is complete
+
+
+ItistheJerry
+JERRYisME@Samyak
