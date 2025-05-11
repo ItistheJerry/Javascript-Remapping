@@ -1,0 +1,17 @@
+console.log is a debugging tool and a browser dev tool it injects run time of the javascript
+
+it runs with c++ and js best runs with v8 engine among many engine it works on.
+
+https://github.com/v8/v8/tree/main/src
+
+d8 is important 
+where console.cc which is console.log
+
+engine goes to browser using development tool in the inspect element tool
+D8console::log and many more read the data and code
+
+
+
+no pretend
+can't be completely honest but has helped me being the better version of me seeing the better world in reasoning
+
