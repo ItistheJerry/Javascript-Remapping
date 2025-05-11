@@ -1,0 +1,340 @@
+/*[1]*/
+/* #butt{
+  display: inline-block;
+  padding: 12px 25px;
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 50px;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.butt:hover{
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.butt:active {
+  transform: translateY(2px);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+}
+
+
+.card {
+  width: 300px;
+  height: 400px;
+  margin: 20px;
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.card-header {
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  padding: 20px;
+  color: white;
+  font-size: 1.25rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.card-body {
+  padding: 20px;
+  font-size: 1rem;
+  color: #333;
+  text-align: center;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.card-footer {
+  padding: 15px;
+  text-align: center;
+}
+
+.card-footer a {
+  text-decoration: none;
+  font-size: 1.1rem;
+  color: #2575fc;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.card-footer a:hover {
+  color: #6a11cb;
+} */
+
+/*[2]*/
+
+/* Centering the card on the screen */
+/* Global Styles */
+/* body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #1e1e1e;
+  color: white;
+}
+
+header {
+  text-align: center;
+  margin-top: 50px;
+}
+
+/* Terminal-like Heading Styles */
+/* .terminal-header {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 3rem;
+  letter-spacing: 2px;
+  display: inline-block;
+  border-left: 3px solid #00ff00;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background-color: #333;
+  box-shadow: 0 0 10px rgba(0, 255, 0, 0.3);
+  position: relative;
+} */
+
+/* Symbol Styling */
+/* .symbol {
+  color: #00ff00;
+  font-size: 2rem;
+  padding: 0 5px;
+  animation: blink 1s infinite step-end;
+} */
+
+/* Terminal-style blinking effect */
+/* @keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+} */
+
+/* Card Container */
+/* .card {
+  width: 300px;
+  height: 400px;
+  margin: 20px;
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.card-header {
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  padding: 20px;
+  color: white;
+  font-size: 1.25rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.card-body {
+  padding: 20px;
+  font-size: 1rem;
+  color: #333;
+  text-align: center;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.card-footer {
+  padding: 15px;
+  text-align: center;
+}
+
+.card-footer a {
+  text-decoration: none;
+  font-size: 1.1rem;
+  color: #2575fc;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.card-footer a:hover {
+  color: #6a11cb;
+}
+
+
+.butt {
+  display: inline-block;
+  padding: 12px 25px;
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 50px;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.butt:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.butt:active {
+  transform: translateY(2px);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+} */
+
+
+
+/*[3]*/
+
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #0b0c10;
+  color: #00ff00;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Terminal-like Heading Styles */
+header {
+  margin-bottom: 20px; /* Space between header and card */
+}
+
+.terminal-header {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 3rem;
+  letter-spacing: 2px;
+  display: inline-block;
+  border-left: 3px solid #00ff00;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background-color: #333;
+  box-shadow: 0 0 10px rgba(0, 255, 0, 0.3);
+  position: relative;
+}
+
+/* Symbol Styling */
+.symbol {
+  color: #00ff00;
+  font-size: 2rem;
+  padding: 0 5px;
+  animation: blink 1s infinite step-end;
+}
+
+/* Terminal-style blinking effect */
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Terminal Card Styles */
+.card {
+  width: 300px;
+  background-color: rgba(0, 0, 0, 0.7); /* Transparent background */
+  border: 2px solid #00ff00; /* Green border like terminal */
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 255, 0, 0.5);
+  margin-top: 20px;
+  padding: 10px;
+}
+
+#card-header {
+  font-family: 'Courier New', Courier, monospace;
+  color: #00ff00;
+  font-size: 1.25rem;
+  font-weight: bold;
+  text-align: center;
+  padding: 10px;
+  border-bottom: 2px solid #00ff00;
+}
+
+.card-body {
+  font-family: 'Courier New', Courier, monospace;
+  color: #00ff00;
+  font-size: 1rem;
+  text-align: center;
+  padding: 10px;
+}
+
+#profile-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  display: none;
+  margin: 20px auto;
+  display: block;
+}
+
+
+.card-footer {
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* Button Styling */
+.button {
+  display: inline-block;
+  padding: 12px 25px;
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 50px;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.button:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.button:active {
+  transform: translateY(2px);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+}
