@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>API || LEARNING</title>
+</head>
+<body  style="background-color: #0b0c10; color: #00ff00">
+    <!-- <p>xml and http requests are the oldest powerfull used till date it is ajex programming 
+    asynchronous programming state wise programming!</p> -->
+    <header>
+        <div class="terminal-header">
+            <span class="symbol">|</span> UDATAU <span class="symbol">|</span>
+        </div>
+    </header>
+    
+    <div class="card">
+        <div id="card-header">Card Title</div>
+        <div class="card-body">
+            <p id="info-text">This is where your data from GitHub will be shown.</p>
+            <img id="profile-image" src="" alt="GitHub Avatar" style="width: 100px; height: 100px; border-radius: 50%; display: none;">
+        </div>
+        <div class="card-footer">
+             <a href="#" id="button">Click Me</a>
+             <div id="name-Data">NAME</div>
+             <div id="repo-data">REPO_NUMBER</div>
+        </div>
+    </div>
+
+    <div id="text-Data">
+        
+    </div>
+
+</body>
+<script>
+    const requestURL = 'https://api.github.com/users/ItistheJerry'
+    // make an object; below one has all the readystates and with this we can recieve and send data and is mostly used can be used by methods
+    const DSR = new XMLHttpRequest();
+    // open sends the requests and only works when we will make the above request
+    DSR.open('GET', requestURL)
+    // above takes two parameters method and string so GET or POST and then string
+    // here just using this DSR.open above wont be sending the request we need to use open()
+    
+    // for card:
+    // from line = 61
+
+    // console.log("HERE");
+    // to track continously use below; will be used when we see tracking over subscribers and views appwrite/firebase
+    DSR.onreadystatechange = function(){
+        console.log(DSR.readyState);
+        // on every state change the function is executed! (asynchronous)
+        // lets detect state below
+        if(DSR.readyState === 4){
+            const data = JSON.parse(this.responseText); // parse is used for converstion
+            console.log(data.followers);// this is very important so means is = current context
+            // lets see followers of the users
+            // most of the time the responses we recieve in the API are in string type
+            // conver the string = const data = JSON(this.responseText);
+
+            // now image and followers and turn card
+            console.log(data.avatar_url);
+            
+            
+            
+            const button_press = document.getElementById('button').addEventListener('click', function(){
+                console.log(data.name);
+                console.log(data.public_repos);
+                document.getElementById('card-header').innerHTML = `Login: ${data.login}`;
+                document.getElementById('profile-image').src = data.avatar_url;
+                document.getElementById('profile-image').style.display = 'block';
+                document.getElementById('info-text').style.display = 'none';
+                document.getElementById('button').style.display = 'none';
+                document.getElementById('name-Data').innerHTML = `${data.name}`;
+                document.getElementById('repo-data').innerHTML = `Repo Count: ${data.public_repos}`;
+            })
+            
+        }
+        
+    }
+    // readyState can change and can be obsereved when we try tracking continously
+    
+    
+    DSR.send() // just send or invoked open()
+</script>
+</html>
