@@ -1,3 +1,5 @@
+``` Javascript
+
 // const myArr = []
 
 // %DebugPrint(myArr);
@@ -213,3 +215,4 @@ console.log(arrSix);
 // Recommendation
 
 // For, for-of, forEach = {[(Method Usage is prefered )]}
+```
