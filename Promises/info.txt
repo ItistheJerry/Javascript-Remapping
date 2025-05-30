@@ -1,0 +1,10 @@
+Interesting 
+
+.then
+.catch
+fetch()
+The above word solves majority of the work
+
+The promise object represents eventual completion (or failure) of an asynchronous operation and its resulting value.
+
+
