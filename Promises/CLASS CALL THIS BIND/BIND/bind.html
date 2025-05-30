@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            background-color: #28282B;
+            color: #00ff00;
+        }
+        #button{
+            color: #00ff00;
+            background-color: #28282B;
+            justify-content: center;
+            /* align-items: center; */
+            /* align-self: center; */
+        }
+
+    </style>
+    <title>React || Try</title>
+</head>
+<body>
+    <button id = "button">Button Clicked</button>
+</body>
+<script>
+    class react {
+        constructor(){
+            this.library = "React"
+            this.server = "https://localhost:3000/"
+
+            // Requirement
+            // as page loads an react object should be created
+            // two part requirement
+            // bind has to be binded with the method, has to be attached
+            // the bind will bind this from all the other this in the method providing reference to it
+
+            document.querySelector('button').addEventListener('click', this.handleClick.bind(this))
+        }
+        handleClick(){
+            console.log("Button Clicked!!");
+            console.log(this.server);
+            
+            
+        }
+    }
+
+    const app = new react()
+    // button reference and click handle event
+</script>
+</html>
