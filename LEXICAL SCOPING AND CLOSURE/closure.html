@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Closure || Lexical Scoping </title>
+    <style>
+        html, body{
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        body{
+            background-color: black;
+            justify-content: center;
+            display: flex;
+            align-items: center;
+        }
+        .butts1{
+            /* justify-content: center; */
+            background-color: rgb(255, 179, 67);
+            border-radius: 50%;
+            text-align: center;
+            color: #e88b2d; 
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            font-size: 20px;
+            border: 2px solid black;
+            /* margin-top: 50%; */
+        }
+        .butts2{
+            /* justify-content: center; */
+            background-color: rgb(255, 179, 67);
+            border-radius: 50%;
+            text-align: center;
+            color: #00ff00; 
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            font-size: 20px;
+            border: 2px solid black;
+            /* margin-top: 50%; */
+        }
+        #orange{
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+            background-color: #e88b2d;
+        }
+        #green{
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+            background-color: #00ff00;
+        }
+
+    </style>
+</head>
+<body>
+       <div class="butts1">
+            <button id="orange">ORANGE</button>
+       </div>
+       <div class="butts2">
+            <button id="green">GREEN</button>
+       </div>
+</body>
+<script>
+    // document.getElementById("orange").onclick = function(){
+    //     document.body.style.backgroundColor = 'orange'
+    // }
+    // document.getElementById("green").onclick = function(){
+    //     document.body.style.backgroundColor = 'green'
+    // }
+
+    // Now the problem where there are 500 buttons and same number of different colour assigned to them change them accordingly
+    // so we will make a clickHandler
+
+    function clickHandler(color){
+        // document.body.style.backgroundColor = `${color}` doesn't work
+        return function (){
+            document.body.style.backgroundColor = `${color}`
+        }
+    }
+    // here the function isn't going out its the entire lexical scope
+
+    document.getElementById('orange').onclick = clickHandler("orange")
+    document.getElementById('green').onclick = clickHandler("green")
+    // problem is that we haven't gave him a function but a function reference
+
+</script>
+</html>
